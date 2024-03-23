@@ -15,9 +15,9 @@
       <li><a href="#education">Education</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#certificate">Certification</a></li>
-     <!-- <li><a href="#">Experience</a></li> -->
+      <li><a href="#my-work">My Work</a></li>
       <li><a href="#about-me">About Me</a></li>
-      <li><a href="Kushagra's Resume.pdf" download="">Resume </a></li>
+      <li><a href="Kushagra's Resume.pdf">Resume </a></li>
 
     </ul>
   </nav>
@@ -141,25 +141,86 @@
     
   </section>
   <section id="certificate" class="container">
-    <br><br><hr>
+    <br><br><br><br><hr>
     <h1>My <span>Certification</span></h1>
+    <div class="certi-wrapper">
     <div class="certificate">
-      <div class="certi">
-       <a href="https://www.coursera.org/account/accomplishments/verify/5ZCD5SAXE4AX"><img src="certificate1-1.png" alt=""></a> 
+      
+      <div class="certi" id="show">
+       <a href="https://www.coursera.org/account/accomplishments/verify/5ZCD5SAXE4AX"><img src="certificate1-1.png"></a> 
         <h3>Getting Started with Figma</h3>
       </div>
-      <div class="certi">
+      <div class="certi" id="show">
         <a href="https://www.coursera.org/account/accomplishments/verify/EFX9ETPWCPSL"><img src="certificate2-1.png" alt=""></a>
         <h3>Introduction to Front-End Development</h3>
       </div>
-      <div class="certi">
+      <div class="certi" id="show">
         <a href="#"><img src="certificate3-1.png" alt=""></a>
         <h3>Design Thinking (IBM)</h3>
       </div>
+      
+      <div class="content" id="hidden">
+      <div class="certi">
+        <a href="https://www.udemy.com/certificate/UC-715e1d5b-7930-4ca1-9747-7fe070ad01b6/?utm_campaign=email&utm_medium=email&utm_source=sendgrid.com">
+          <img src="certificate4.jpg" alt="">
+        </a>
+          <h3>CSS,Bootstrap,JS,and PHP Stack Complete Course</h3>
+          
+        
+      </div>
+      
     </div>
+  
+
+    </div>
+  </div>
+  <div class="button">
+    <button onclick="hide()" id="btn-hide">Show Less &#11205;</button>
+  <button onclick="show()" id="btn-show">Show More &#11206;</button>
+  
+</div>
+    <script>
+      function hide(){
+        document.getElementById('hidden').style.display="none"
+        document.getElementById('show').style.display="flex"
+        document.getElementById('btn-show').style.display="flex"
+        document.getElementById('btn-hide').style.display="none"
+
+      }
+      function show(){
+        document.getElementById('hidden').style.display="flex"
+        document.getElementById('show').style.display="flex"
+        document.getElementById('btn-show').style.display="none"
+        document.getElementById('btn-hide').style.display="flex"
+
+
+      }
+    </script>
     
-    <br><br><br><br><hr>
+    
+    
   </section>
+  <section id="my-work">
+    <br><br><br><br><hr>
+    <h1>My <span>Work</span></h1>
+    <div class="work-container">
+      <div class="work-wrap">
+        <div class="work-item">
+        <h2><span>P</span>ortfolio</h2>
+        <a href=""><img src="work-1.png" alt=""></a>
+        </div>
+        <div class="work-item">
+          <h2><span>Kiddies</span>Mart</h2>
+          <a href="#"><img src="work-2.png" alt=""></a>
+          </div>
+          <div class="work-item">
+            <h2><span>Acting  </span> and Modeling Portal</h2>
+            <a href="#"><img src="work-3.png" alt=""></a>
+            </div>
+      </div>
+    </div>
+  </section>
+  <br><br><br><br><hr>
   <section id="about-me" class="container">
     <h1>About <span>Me</span></h1>
     <br>
